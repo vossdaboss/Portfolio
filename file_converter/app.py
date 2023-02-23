@@ -18,6 +18,7 @@ def convert_file():
             output = result.stdout
         else:
             output = result.stderr
+            
         if output_format == 'json':
             return send_file(output_path, as_attachment=True)
 
