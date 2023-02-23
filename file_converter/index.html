@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>File Converter</title>
+  </head>
+  <body>
+    <h1>File Converter</h1>
+    <form action="convert.py" method="post">
+      <label for="input_path">Input file path:</label>
+      <input type="text" id="input_path" name="input_path"><br><br>
+      
+      <label for="output_path">Output file path:</label>
+      <input type="text" id="output_path" name="output_path"><br><br>
+      
+      <label for="input_format">Input file format:</label>
+      <select id="input_format" name="input_format">
+        <option value="csv">CSV</option>
+        <option value="json">JSON</option>
+        <option value="txt">Text</option>
+        <!-- add more options as needed -->
+      </select><br><br>
+      
+      <label for="output_format">Output file format:</label>
+      <select id="output_format" name="output_format">
+        <option value="csv">CSV</option>
+        <option value="json">JSON</option>
+        <option value="txt">Text</option>
+        <!-- add more options as needed -->
+      </select><br><br>
+      
+      <input type="submit" value="Convert">
+    </form>
+  </body>
+</html>
